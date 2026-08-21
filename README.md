@@ -8,4 +8,4 @@ A demo usa SQLite temporário e pode perder dados quando o serviço gratuito rei
 
 ## Publicação
 
-O serviço é construído com Docker a partir do `Dockerfile`. O código Laravel está compactado em `happynationbet-demo-source-small.zip` para manter o repositório leve e excluir os ativos grandes de jogos e arquivos sensíveis.
+O serviço é construído com Docker a partir do `Dockerfile`. O código Laravel está compactado em `happynationbet-demo-source-tiny.zip` para manter o repositório leve e excluir os ativos grandes de jogos e arquivos sensíveis.
