@@ -15,6 +15,8 @@ if [ "$DB_CONNECTION" = "sqlite" ]; then
   touch "$DB_DATABASE"
 fi
 
+mkdir -p storage/framework/cache/data storage/framework/sessions storage/framework/views storage/logs bootstrap/cache database
+
 php artisan config:clear
 php artisan route:clear
 php artisan view:clear
