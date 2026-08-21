@@ -4,7 +4,7 @@ set -eu
 : "${PORT:=10000}"
 : "${APP_ENV:=production}"
 : "${APP_DEBUG:=false}"
-: "${APP_URL:=http://${RENDER_EXTERNAL_HOSTNAME:-localhost}}"
+: "${APP_URL:=https://${RENDER_EXTERNAL_HOSTNAME:-localhost}}"
 : "${DB_CONNECTION:=sqlite}"
 : "${DB_DATABASE:=/var/www/html/database/database.sqlite}"
 
