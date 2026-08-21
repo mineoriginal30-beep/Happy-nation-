@@ -22,7 +22,10 @@ php artisan migrate --force
 php artisan db:seed --force
 php artisan storage:link || true
 php artisan config:cache
-php artisan route:cache
+# The project uses include_once route groups that are omitted by Laravel's
+# route:cache command in this sanitized build. Keep the route cache cleared so
+# all public API and authentication routes are loaded from routes/api.php.
+php artisan route:clear
 php artisan view:cache
 
 sed -ri "s/Listen 80/Listen ${PORT}/" /etc/apache2/ports.conf
